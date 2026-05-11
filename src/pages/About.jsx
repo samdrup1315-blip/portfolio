@@ -15,39 +15,33 @@ const About = () => (
       <div className="about__grid">
         {/* Left: bio text */}
         <div className="about__bio">
-          <p>
-            I'm a <strong>{PROFILE.year}</strong> student at{' '}
-            <strong>{PROFILE.college}</strong>, passionate about building
-            full-stack web applications. My current focus is the{' '}
-            <span className="accent">MERN stack</span> — MongoDB, Express,
-            React, and Node.js.
-          </p>
-          <p>
-            I enjoy turning complex problems into clean, performant interfaces.
-            My coursework covers React with Redux &amp; Redux Saga, Node.js
-            event-driven architecture, and MongoDB for database access — all of
-            which I apply in real projects.
-          </p>
-          <p>
-            When I'm not coding, I'm reading tech blogs, contributing to
-            open-source projects, or exploring new libraries.
-          </p>
+  <p>
+    I'm <strong>Yeshey Samdrup</strong>, a <strong>{PROFILE.year}</strong> student at{' '}
+    <strong>SRM University, Sikkim</strong>, passionate about full-stack web development.
+  </p>
+  <p>
+    I enjoy working with the <span className="accent">MERN stack</span> (MongoDB, Express, React, Node.js) 
+    along with Python and PHP. My goal is to build clean, efficient, and user-centric web applications.
+  </p>
+  <p>
+    When I'm not coding, I love exploring the World around me, reading Manhwa's, 
+    and working on real-world projects.
+  </p>
 
-          <div className="about__tech">
-            <p className="about__tech-label mono">Technologies I work with:</p>
-            <ul className="about__tech-list">
-              {[
-                'React JS', 'Redux / Redux Saga', 'Immutable.js',
-                'Node.js', 'Express.js', 'MongoDB / Mongoose',
-              ].map(t => (
-                <li key={t} className="mono">
-                  <span className="accent">▸</span> {t}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
+  <div className="about__tech">
+    <p className="about__tech-label mono">Technologies I work with:</p>
+    <ul className="about__tech-list">
+      {[
+        'React JS', 'JavaScript', 'Node.js', 'Express.js',
+        'MongoDB', 'Python', 'PHP', 'Redux / Saga'
+      ].map(t => (
+        <li key={t} className="mono">
+          <span className="accent">▸</span> {t}
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
         {/* Right: education cards */}
         <div className="about__education">
           <p className="about__edu-label mono">Education</p>

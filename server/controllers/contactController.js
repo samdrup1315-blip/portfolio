@@ -5,15 +5,13 @@ const logger  = require('../utils/logger');
 
 /* ── GET /api/contact ── Returns static contact info ── */
 exports.getContactInfo = (req, res) => {
-  /* Static data — in a real app you'd fetch from DB */
   res.json({
-    email:    'yourname@email.com',
-    github:   'https://github.com/yourhandle',
+    email:    'samdrup1315@gmail.com',           
+    github:   'https://github.com/yourhandle',     
     linkedin: 'https://linkedin.com/in/yourhandle',
-    location: 'Kolkata, India',
+    location: 'Gangtok, India',
   });
 };
-
 /* ── POST /api/contact ── Save a new message to MongoDB ── */
 exports.sendMessage = async (req, res) => {
   try {
