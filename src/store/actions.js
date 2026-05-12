@@ -8,6 +8,8 @@ export const SEND_MESSAGE_SUCCESS  = 'SEND_MESSAGE_SUCCESS';
 export const SEND_MESSAGE_FAILURE  = 'SEND_MESSAGE_FAILURE';
 export const SET_ACTIVE_SECTION    = 'SET_ACTIVE_SECTION';
 
+
+
 /* ─── Action Creators ─── */
 
 export const fetchContactRequest = ()       => ({ type: FETCH_CONTACT_REQUEST });
@@ -17,3 +19,5 @@ export const sendMessageRequest  = (form)   => ({ type: SEND_MESSAGE_REQUEST,  p
 export const sendMessageSuccess  = ()       => ({ type: SEND_MESSAGE_SUCCESS });
 export const sendMessageFailure  = (error)  => ({ type: SEND_MESSAGE_FAILURE,  payload: error });
 export const setActiveSection    = (sec)    => ({ type: SET_ACTIVE_SECTION,    payload: sec });
+
+

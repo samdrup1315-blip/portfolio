@@ -4,7 +4,9 @@ import {
   FETCH_CONTACT_REQUEST, FETCH_CONTACT_SUCCESS, FETCH_CONTACT_FAILURE,
   SEND_MESSAGE_REQUEST,  SEND_MESSAGE_SUCCESS,  SEND_MESSAGE_FAILURE,
   SET_ACTIVE_SECTION,
+
 } from './actions';
+
 
 /* Initial state as Immutable.js Map */
 const initialState = fromJS({
@@ -43,8 +45,11 @@ const portfolioReducer = (state = initialState, action) => {
     case SEND_MESSAGE_FAILURE:
       return state.set('sending', false).set('error', action.payload);
 
+
+
     case SET_ACTIVE_SECTION:
       return state.set('activeSection', action.payload);
+
 
     default:
       return state;

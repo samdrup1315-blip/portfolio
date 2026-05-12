@@ -7,7 +7,7 @@ const logger  = require('../utils/logger');
 exports.getContactInfo = (req, res) => {
   res.json({
     email:    'samdrup1315@gmail.com',           
-    github:   'https://github.com/yourhandle',     
+    github:   'https://github.com/samdrup1315-blip',     
     linkedin: 'https://linkedin.com/in/yourhandle',
     location: 'Gangtok, India',
   });
